@@ -10,6 +10,11 @@
 
 @interface PersonalTableViewController () <UINavigationControllerDelegate>
 
+
+@property (weak, nonatomic) IBOutlet UITableViewCell *versionCell;
+@property (weak, nonatomic) IBOutlet UITableViewCell *clearBufferCell;
+
+
 @end
 
 @implementation PersonalTableViewController
@@ -23,14 +28,21 @@
         self.tableView.backgroundColor = kDefaultBackgroundColor;
     }
     
-    //设置导航栏
     [self setUpNav];
+    [self setUpViews];
 }
 
 #pragma mark - setUpViews
 - (void)setUpNav {
     //设置导航栏代理
     self.navigationController.delegate = self;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (void)setUpViews {
+    self.versionCell.detailTextLabel.text = nil;
+    self.clearBufferCell.detailTextLabel.text = nil;
+    self.versionCell.textLabel.text = [NSString stringWithFormat:@"当前版本（ %@ ）",XcodeAppVersion];;
 }
 
 #pragma mark - Table view data source
@@ -97,6 +109,42 @@
 //            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 //        }
 //    }
+}
+
+
+#pragma mark - system Views methods
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+//    [self refreshQzoneShow];
+//    [self refreshSinaWeiboShow];
+    //    self.qqWeiboCell.detailTextLabel.text = [[WeiboApi getDefaultTCWeibo] getScreenName];
+    
+    //设置缓存
+    long long folderSize = [[NSURLCache sharedURLCache] currentDiskUsage];
+    if (folderSize < 1024) {
+        self.clearBufferCell.textLabel.text = @"清除缓存（ 0M ）";
+    }
+    else if (folderSize < 1024*1024) {
+        self.clearBufferCell.textLabel.text = [NSString stringWithFormat:@"清除缓存（ %lldK ）",folderSize / 1024];
+    }
+    else {
+        self.clearBufferCell.textLabel.text = [NSString stringWithFormat:@"清除缓存（ %lldM ）",folderSize / 1024 / 1024];
+    }
+    
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+//        BOOL showStatusBarStyleDefault = self.tableView.contentOffset.y > self.userInfoView.height;
+//        double delayInSeconds = 0.0;
+//        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//            if (showStatusBarStyleDefault) {
+//                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+//            }
+//            else {
+//                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+//            }
+//        });
+    }
 }
 
 #pragma mark -

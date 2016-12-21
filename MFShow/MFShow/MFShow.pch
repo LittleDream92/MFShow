@@ -24,4 +24,10 @@
 //默认背景颜色
 #define kDefaultBackgroundColor [UIColor colorWithRed:243.0/255.0 green:243.0/255.0 blue:243.0/255.0 alpha:1]
 
+
+
+
+#define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+
 #endif /* MFShow_pch */

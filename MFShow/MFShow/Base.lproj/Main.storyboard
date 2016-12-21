@@ -290,6 +290,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="y2c-g3-0Jp"/>
+                    <connections>
+                        <outlet property="clearBufferCell" destination="Gzs-jt-8Ej" id="k0L-94-PXs"/>
+                        <outlet property="versionCell" destination="20E-gb-60T" id="ubE-aG-qOF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VR6-G6-sbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
