@@ -86,10 +86,8 @@
 				A839394F1E0A736100881319 /* Main.storyboard */,
 				A83939641E0A765100881319 /* APPDELEGATE */,
 				A839395E1E0A764500881319 /* Classes */,
-				A839395D1E0A73FE00881319 /* MFShow.pch */,
 				A83939521E0A736100881319 /* Assets.xcassets */,
 				A83939541E0A736100881319 /* LaunchScreen.storyboard */,
-				A83939571E0A736100881319 /* Info.plist */,
 				A83939461E0A736100881319 /* Supporting Files */,
 			);
 			path = MFShow;
@@ -98,6 +96,8 @@
 		A83939461E0A736100881319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A839395D1E0A73FE00881319 /* MFShow.pch */,
+				A83939571E0A736100881319 /* Info.plist */,
 				A83939471E0A736100881319 /* main.m */,
 			);
 			name = "Supporting Files";
