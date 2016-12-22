@@ -26,7 +26,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 2;
+    return 1;
 //    self.navigationItem.rightBarButtonItem.enabled = (0 != [self.tableViewData count]);
 //    self.showNoFavoriteLabel.hidden = (0 != [self.tableViewData count]);
 //    return [self.tableViewData count];
@@ -49,7 +49,9 @@
 }
 
 #pragma mark - UITableViewDelegate
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 400;
+}
 
 
 #pragma mark -
