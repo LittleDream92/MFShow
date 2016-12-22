@@ -95,6 +95,12 @@
             navigationController.navigationBar.barTintColor = [UIColor whiteColor];
             navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
         }
+    } else {
+        UIApplication* app = [UIApplication sharedApplication];
+        if (app.statusBarHidden) {
+            app.statusBarHidden = NO;
+        }
+        [navigationController setNavigationBarHidden:NO animated:animated];
     }
 //    else if ([viewController isKindOfClass:[ShowPictureListViewController class]] || [viewController isKindOfClass:[ShowPictureViewController class]]) {
 //        [[UIApplication sharedApplication] setStatusBarHidden:YES];
