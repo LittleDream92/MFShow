@@ -28,6 +28,7 @@
         self.tableView.backgroundColor = kDefaultBackgroundColor;
     }
     
+    
     [self setUpNav];
     [self setUpViews];
 }
@@ -42,7 +43,9 @@
 - (void)setUpViews {
     self.versionCell.detailTextLabel.text = nil;
     self.clearBufferCell.detailTextLabel.text = nil;
-    self.versionCell.textLabel.text = [NSString stringWithFormat:@"当前版本（ %@ ）",XcodeAppVersion];;
+    self.versionCell.textLabel.text = [NSString stringWithFormat:@"当前版本（ %@ ）",XcodeAppVersion];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0);
 }
 
 #pragma mark - Table view data source
@@ -77,6 +80,13 @@
             break;
     }
     return view;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+    
+    NSLog(@"indexPath, section : %ld, row: %ld", indexPath.section, indexPath.row);
 }
 
 

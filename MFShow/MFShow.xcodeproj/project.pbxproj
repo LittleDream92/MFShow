@@ -17,6 +17,10 @@
 		A839397D1E0A77F500881319 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A839397C1E0A77F500881319 /* ItemViewController.m */; };
 		A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A839397F1E0A780B00881319 /* PersonalTableViewController.m */; };
 		A8D632641E0BB7DB00123AA4 /* LikeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */; };
+		A8D632671E0BC87400123AA4 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632661E0BC87400123AA4 /* DownloadTableViewController.m */; };
+		A8D6326A1E0BD18200123AA4 /* FeedBackByCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632691E0BD18200123AA4 /* FeedBackByCustomViewController.m */; };
+		A8D6326D1E0BD4D500123AA4 /* ManageLikeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D6326C1E0BD4D500123AA4 /* ManageLikeFeedViewController.m */; };
+		A8D632701E0BD60900123AA4 /* ManageFavorItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D6326F1E0BD60900123AA4 /* ManageFavorItemView.m */; };
 		C9ED8EBFD8B00868CD9234A2 /* libPods-MFShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 749443F609F9C2EFA8EFB479 /* libPods-MFShow.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,14 @@
 		A839397F1E0A780B00881319 /* PersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewController.m; sourceTree = "<group>"; };
 		A8D632621E0BB7DB00123AA4 /* LikeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeFeedViewController.h; sourceTree = "<group>"; };
 		A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeFeedViewController.m; sourceTree = "<group>"; };
+		A8D632651E0BC87400123AA4 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
+		A8D632661E0BC87400123AA4 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
+		A8D632681E0BD18200123AA4 /* FeedBackByCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackByCustomViewController.h; sourceTree = "<group>"; };
+		A8D632691E0BD18200123AA4 /* FeedBackByCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackByCustomViewController.m; sourceTree = "<group>"; };
+		A8D6326B1E0BD4D500123AA4 /* ManageLikeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageLikeFeedViewController.h; sourceTree = "<group>"; };
+		A8D6326C1E0BD4D500123AA4 /* ManageLikeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageLikeFeedViewController.m; sourceTree = "<group>"; };
+		A8D6326E1E0BD60900123AA4 /* ManageFavorItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageFavorItemView.h; sourceTree = "<group>"; };
+		A8D6326F1E0BD60900123AA4 /* ManageFavorItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageFavorItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,8 +292,14 @@
 			children = (
 				A839397E1E0A780B00881319 /* PersonalTableViewController.h */,
 				A839397F1E0A780B00881319 /* PersonalTableViewController.m */,
+				A8D632651E0BC87400123AA4 /* DownloadTableViewController.h */,
+				A8D632661E0BC87400123AA4 /* DownloadTableViewController.m */,
+				A8D632681E0BD18200123AA4 /* FeedBackByCustomViewController.h */,
+				A8D632691E0BD18200123AA4 /* FeedBackByCustomViewController.m */,
 				A8D632621E0BB7DB00123AA4 /* LikeFeedViewController.h */,
 				A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */,
+				A8D6326B1E0BD4D500123AA4 /* ManageLikeFeedViewController.h */,
+				A8D6326C1E0BD4D500123AA4 /* ManageLikeFeedViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +314,8 @@
 		A83939741E0A77C100881319 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8D6326E1E0BD60900123AA4 /* ManageFavorItemView.h */,
+				A8D6326F1E0BD60900123AA4 /* ManageFavorItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -432,12 +452,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83939771E0A77D500881319 /* RootTabbarController.m in Sources */,
+				A8D632701E0BD60900123AA4 /* ManageFavorItemView.m in Sources */,
 				A839394B1E0A736100881319 /* AppDelegate.m in Sources */,
 				A839397D1E0A77F500881319 /* ItemViewController.m in Sources */,
 				A83939481E0A736100881319 /* main.m in Sources */,
 				A839397A1E0A77E700881319 /* HomeViewController.m in Sources */,
 				A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */,
+				A8D6326D1E0BD4D500123AA4 /* ManageLikeFeedViewController.m in Sources */,
 				A8D632641E0BB7DB00123AA4 /* LikeFeedViewController.m in Sources */,
+				A8D6326A1E0BD18200123AA4 /* FeedBackByCustomViewController.m in Sources */,
+				A8D632671E0BC87400123AA4 /* DownloadTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

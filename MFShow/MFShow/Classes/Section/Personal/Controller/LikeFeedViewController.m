@@ -11,7 +11,9 @@
 @interface LikeFeedViewController ()
 <UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UIButton *openManageButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *showNoFaveriteLabel;
 
 @end
 
@@ -52,6 +54,14 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 400;
 }
+
+
+
+#pragma mark - action
+- (IBAction)openManageAtFeedCtrl:(id)sender {
+    NSLog(@"open manage");
+}
+
 
 
 #pragma mark -
