@@ -10,6 +10,7 @@
 		A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */; };
 		A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */; };
 		A83389F41E0D1BE300AEEBC1 /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */; };
+		A83389F81E0D221800AEEBC1 /* RefreshNetServerData.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389F71E0D221800AEEBC1 /* RefreshNetServerData.m */; };
 		A83939481E0A736100881319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83939471E0A736100881319 /* main.m */; };
 		A839394B1E0A736100881319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A839394A1E0A736100881319 /* AppDelegate.m */; };
 		A83939511E0A736100881319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A839394F1E0A736100881319 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 		A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorWithH.m"; sourceTree = "<group>"; };
 		A83389F21E0D1BE300AEEBC1 /* MainFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedViewController.h; sourceTree = "<group>"; };
 		A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedViewController.m; sourceTree = "<group>"; };
+		A83389F61E0D221800AEEBC1 /* RefreshNetServerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshNetServerData.h; sourceTree = "<group>"; };
+		A83389F71E0D221800AEEBC1 /* RefreshNetServerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshNetServerData.m; sourceTree = "<group>"; };
 		A83939431E0A736100881319 /* MFShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83939471E0A736100881319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A83939491E0A736100881319 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		A83389F51E0D21FD00AEEBC1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A83389F61E0D221800AEEBC1 /* RefreshNetServerData.h */,
+				A83389F71E0D221800AEEBC1 /* RefreshNetServerData.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A839393A1E0A736100881319 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +171,7 @@
 		A839395F1E0A764500881319 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				A83389F51E0D21FD00AEEBC1 /* Utils */,
 				A83389EB1E0CFE9300AEEBC1 /* Category */,
 				A83389E71E0CFB0400AEEBC1 /* Public */,
 				A83939601E0A764500881319 /* Root */,
@@ -484,6 +497,7 @@
 			files = (
 				A83939771E0A77D500881319 /* RootTabbarController.m in Sources */,
 				A8D632701E0BD60900123AA4 /* ManageFavorItemView.m in Sources */,
+				A83389F81E0D221800AEEBC1 /* RefreshNetServerData.m in Sources */,
 				A839394B1E0A736100881319 /* AppDelegate.m in Sources */,
 				A839397D1E0A77F500881319 /* ItemViewController.m in Sources */,
 				A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */,
