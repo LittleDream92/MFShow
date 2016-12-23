@@ -30,4 +30,8 @@
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 
+
+#import "UIColor+ColorWithH.h"
+
+
 #endif /* MFShow_pch */

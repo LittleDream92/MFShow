@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */; };
+		A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */; };
 		A83939481E0A736100881319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83939471E0A736100881319 /* main.m */; };
 		A839394B1E0A736100881319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A839394A1E0A736100881319 /* AppDelegate.m */; };
 		A83939511E0A736100881319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A839394F1E0A736100881319 /* Main.storyboard */; };
@@ -28,6 +30,10 @@
 		749443F609F9C2EFA8EFB479 /* libPods-MFShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MFShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		762F8F9A92245415E63A4F65 /* Pods-MFShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFShow/Pods-MFShow.debug.xcconfig"; sourceTree = "<group>"; };
 		8727D3B022D64ED229E503EE /* Pods-MFShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFShow/Pods-MFShow.release.xcconfig"; sourceTree = "<group>"; };
+		A83389E81E0CFB2300AEEBC1 /* NavigationTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTitleButton.h; sourceTree = "<group>"; };
+		A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTitleButton.m; sourceTree = "<group>"; };
+		A83389EC1E0CFEB900AEEBC1 /* UIColor+ColorWithH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorWithH.h"; sourceTree = "<group>"; };
+		A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorWithH.m"; sourceTree = "<group>"; };
 		A83939431E0A736100881319 /* MFShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83939471E0A736100881319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A83939491E0A736100881319 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +81,24 @@
 				749443F609F9C2EFA8EFB479 /* libPods-MFShow.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A83389E71E0CFB0400AEEBC1 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A83389E81E0CFB2300AEEBC1 /* NavigationTitleButton.h */,
+				A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		A83389EB1E0CFE9300AEEBC1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A83389EC1E0CFEB900AEEBC1 /* UIColor+ColorWithH.h */,
+				A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		A839393A1E0A736100881319 = {
@@ -132,6 +156,8 @@
 		A839395F1E0A764500881319 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				A83389EB1E0CFE9300AEEBC1 /* Category */,
+				A83389E71E0CFB0400AEEBC1 /* Public */,
 				A83939601E0A764500881319 /* Root */,
 			);
 			path = General;
@@ -455,6 +481,8 @@
 				A8D632701E0BD60900123AA4 /* ManageFavorItemView.m in Sources */,
 				A839394B1E0A736100881319 /* AppDelegate.m in Sources */,
 				A839397D1E0A77F500881319 /* ItemViewController.m in Sources */,
+				A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */,
+				A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */,
 				A83939481E0A736100881319 /* main.m in Sources */,
 				A839397A1E0A77E700881319 /* HomeViewController.m in Sources */,
 				A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */,
