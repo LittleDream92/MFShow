@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */; };
 		A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */; };
-		A83389F11E0D15D600AEEBC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389F01E0D15D600AEEBC1 /* MainViewController.m */; };
+		A83389F41E0D1BE300AEEBC1 /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */; };
 		A83939481E0A736100881319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83939471E0A736100881319 /* main.m */; };
 		A839394B1E0A736100881319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A839394A1E0A736100881319 /* AppDelegate.m */; };
 		A83939511E0A736100881319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A839394F1E0A736100881319 /* Main.storyboard */; };
@@ -35,8 +35,8 @@
 		A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTitleButton.m; sourceTree = "<group>"; };
 		A83389EC1E0CFEB900AEEBC1 /* UIColor+ColorWithH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorWithH.h"; sourceTree = "<group>"; };
 		A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorWithH.m"; sourceTree = "<group>"; };
-		A83389EF1E0D15D600AEEBC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		A83389F01E0D15D600AEEBC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A83389F21E0D1BE300AEEBC1 /* MainFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedViewController.h; sourceTree = "<group>"; };
+		A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedViewController.m; sourceTree = "<group>"; };
 		A83939431E0A736100881319 /* MFShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83939471E0A736100881319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A83939491E0A736100881319 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -255,8 +255,8 @@
 			children = (
 				A83939781E0A77E700881319 /* HomeViewController.h */,
 				A83939791E0A77E700881319 /* HomeViewController.m */,
-				A83389EF1E0D15D600AEEBC1 /* MainViewController.h */,
-				A83389F01E0D15D600AEEBC1 /* MainViewController.m */,
+				A83389F21E0D1BE300AEEBC1 /* MainFeedViewController.h */,
+				A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -493,9 +493,9 @@
 				A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */,
 				A8D6326D1E0BD4D500123AA4 /* ManageLikeFeedViewController.m in Sources */,
 				A8D632641E0BB7DB00123AA4 /* LikeFeedViewController.m in Sources */,
-				A83389F11E0D15D600AEEBC1 /* MainViewController.m in Sources */,
 				A8D6326A1E0BD18200123AA4 /* FeedBackByCustomViewController.m in Sources */,
 				A8D632671E0BC87400123AA4 /* DownloadTableViewController.m in Sources */,
+				A83389F41E0D1BE300AEEBC1 /* MainFeedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

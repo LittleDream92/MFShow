@@ -8,13 +8,14 @@
 
 #import "HomeViewController.h"
 #import "NavigationTitleButton.h"
+#import "MainFeedViewController.h"
 
 @interface HomeViewController () <NavigationTitleButtonDelegate>
 
 //导航栏自定义控件
 @property (weak, nonatomic) IBOutlet NavigationTitleButton *titleButton;
 
-
+@property (nonatomic, strong) MainFeedViewController *mainFeedViewController;
 
 @end
 
@@ -39,6 +40,11 @@
 //初始化
 - (void)setUpViews {
     
+    //初始化子控制器
+    self.mainFeedViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MainFeedViewController"];
+    self.mainFeedViewController.view.frame = self.view.bounds;
+    [self addChildViewController:self.mainFeedViewController];
+    [self.view addSubview:self.mainFeedViewController.view];
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  MainFeedViewController.h
 //  MFShow
 //
 //  Created by Meng Fan on 16/12/23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainFeedViewController : UIViewController
 
 @end
