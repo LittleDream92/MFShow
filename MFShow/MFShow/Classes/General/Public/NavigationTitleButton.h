@@ -8,12 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
+
+//代理方法
+@class NavigationTitleButton;
+
+@protocol NavigationTitleButtonDelegate <NSObject>
+
+@optional
+- (void)selectedNavigationItem:(NavigationTitleButton *)button withIndex:(NSInteger)selectedIndex;
+
+@end
+
+
+
+
+
 @interface NavigationTitleButton : UIView
 
-/**
- *   导航栏按钮视图
- */
-
+//代理
+@property (nonatomic, assign) id<NavigationTitleButtonDelegate> delegate;
 
 //设置按钮的选择数字，有多少个标签，设置多少个数字0表示最左边，最大的数字表示最右边
 @property (nonatomic, assign) NSInteger selected;

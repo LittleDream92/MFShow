@@ -7,12 +7,13 @@
 //
 
 #import "HomeViewController.h"
-// #import "NavigationTitleButton.h"
+#import "NavigationTitleButton.h"
 
-@interface HomeViewController ()
+@interface HomeViewController () <NavigationTitleButtonDelegate>
 
 //导航栏自定义控件
 @property (weak, nonatomic) IBOutlet NavigationTitleButton *titleButton;
+
 
 
 @end
@@ -21,9 +22,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setUpNav];
+    [self setUpViews];
 }
 
+
+#pragma mark - setUpViews
+- (void)setUpNav {
+    //设置导航栏代理
+    self.titleButton.delegate = self;
+}
+
+//初始化
+- (void)setUpViews {
+    
+}
+
+
+#pragma mark - NavigationTitleButtonDelegate
+- (void)selectedNavigationItem:(NavigationTitleButton *)button withIndex:(NSInteger)selectedIndex {
+    NSLog(@"selectIndex: %ld", selectedIndex);
+}
 
 
 

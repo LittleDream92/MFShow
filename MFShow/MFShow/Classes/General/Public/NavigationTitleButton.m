@@ -37,6 +37,7 @@
 @dynamic leftText;
 @dynamic middleText;
 
+ 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     
@@ -51,17 +52,16 @@
         self.tapImageGesture = single;
         [self addGestureRecognizer:single];
         
-        //初始化选中下标
-//        self.selected = 0;
-        
         //初始化颜色
-        self.normalColor = [UIColor colorFromHexRGB:@"333333"];
-        self.selectColor = [UIColor colorFromHexRGB:@"ff9523"];
+        self.selectColor = [UIColor colorFromHexRGB:@"333333"];
+        self.normalColor = [UIColor colorFromHexRGB:@"ff9523"];
+        [self performSelector:@selector(setColor) withObject:nil afterDelay:0.0];
         
-        [self performSelector:@selector(setColor) withObject:self afterDelay:0.0];
     }
     return self;
 }
+ 
+
 
 #pragma mark - action
 - (void)setColor {
@@ -72,6 +72,7 @@
         _middleItemLabel.textColor = self.selectColor;
     }
 }
+
 
 - (void)handleTap:(UITapGestureRecognizer *)gesture {
     NSLog(@"tap");
@@ -88,10 +89,10 @@
                             return;
                         }
                     }
-                    if (templ.tag == (self.selected+1000)) {
+                    if (templ.tag == (self.selected + 1000)) {
                         return;
                     }
-                    self.selected = templ.tag-1000;
+                    self.selected = templ.tag - 1000;
                     flag = 1;
                     break;
                 }
@@ -100,19 +101,20 @@
         if (flag!=1) {
             return;
         }
-//        if (self.delegate && [self.delegate respondsToSelector:@selector(selectedNavigationItem:withIndex:)])
-//        {
-//            [self.delegate performSelector:@selector(selectedNavigationItem:withIndex:) withObject:self withObject:[NSNumber numberWithInteger:self.selected]];
-//        }
+        //代理方法传值
+        if (self.delegate && [self.delegate respondsToSelector:@selector(selectedNavigationItem:withIndex:)])
+        {
+            [self.delegate performSelector:@selector(selectedNavigationItem:withIndex:) withObject:self withObject:[NSNumber numberWithInteger:self.selected]];
+        }
     }
 }
+ 
 
 #pragma mark -
 //选中之后设置颜色变化
 - (void)setTextColor {
     NSArray *arr = self.subviews;
     
-
     UILabel *templ = nil;
     UIView *tempV;
     
@@ -138,7 +140,6 @@
                 tempV.backgroundColor = [UIColor clearColor];
             }
         }
-        
     }
 }
 
@@ -168,5 +169,7 @@
     _selected = selected;
     [self setTextColor];
 }
+
+
 
 @end
