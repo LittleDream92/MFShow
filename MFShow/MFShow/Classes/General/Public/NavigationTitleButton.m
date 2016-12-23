@@ -8,7 +8,6 @@
 
 #import "NavigationTitleButton.h"
 
-
 @interface NavigationTitleButton ()
 
 //控件
@@ -21,7 +20,6 @@
 //普通和选中颜色
 @property (nonatomic, strong) UIColor *normalColor;
 @property (nonatomic, strong) UIColor *selectColor;
-
 
 //点击手势
 @property (nonatomic, strong) UITapGestureRecognizer *tapImageGesture;
@@ -75,7 +73,7 @@
 
 
 - (void)handleTap:(UITapGestureRecognizer *)gesture {
-    NSLog(@"tap");
+    
     if (gesture.state == UIGestureRecognizerStateEnded && self.enable) {
         NSArray* arr = self.subviews;
         UILabel *templ = nil;
@@ -89,10 +87,10 @@
                             return;
                         }
                     }
-                    if (templ.tag == (self.selected + 1000)) {
+                    if (templ.tag == (self.selectedIndex + 1000)) {
                         return;
                     }
-                    self.selected = templ.tag - 1000;
+                    self.selectedIndex = templ.tag - 1000;
                     flag = 1;
                     break;
                 }
@@ -104,7 +102,7 @@
         //代理方法传值
         if (self.delegate && [self.delegate respondsToSelector:@selector(selectedNavigationItem:withIndex:)])
         {
-            [self.delegate performSelector:@selector(selectedNavigationItem:withIndex:) withObject:self withObject:[NSNumber numberWithInteger:self.selected]];
+            [self.delegate performSelector:@selector(selectedNavigationItem:withIndex:) withObject:self withObject:[NSNumber numberWithInteger:self.selectedIndex]];
         }
     }
 }
@@ -122,7 +120,7 @@
     for (id lab in arr) {
         if ([lab isKindOfClass:[UILabel class]]) {
             templ = lab;
-            if (templ.tag == (self.selected + 1000)) {  //1000  最热
+            if (templ.tag == (self.selectedIndex + 1000)) {  //1000  最热
                 templ.textColor = self.normalColor;
             }else {
                 templ.textColor = self.selectColor;
@@ -134,7 +132,7 @@
     for (id view in arr) {
         if ([view isKindOfClass:[UIView class]]) {
             tempV = view;
-            if (tempV.tag == (self.selected + 1200)) {      //leftView 1200
+            if (tempV.tag == (self.selectedIndex + 1200)) {      //leftView 1200
                 tempV.backgroundColor = self.normalColor;
             }else{
                 tempV.backgroundColor = [UIColor clearColor];
@@ -164,11 +162,11 @@
     return  self.middleItemLabel.text;
 }
 
-
--(void)setSelected:(NSInteger)selected {
-    _selected = selected;
+-(void)setSelectedIndex:(NSInteger)selectedIndex {
+    _selectedIndex = selectedIndex;
     [self setTextColor];
 }
+
 
 
 

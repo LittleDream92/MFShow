@@ -32,6 +32,8 @@
 - (void)setUpNav {
     //设置导航栏代理
     self.titleButton.delegate = self;
+    //初始化选中下标
+    self.titleButton.selectedIndex = 0;
 }
 
 //初始化
@@ -41,8 +43,8 @@
 
 
 #pragma mark - NavigationTitleButtonDelegate
-- (void)selectedNavigationItem:(NavigationTitleButton *)button withIndex:(NSInteger)selectedIndex {
-    NSLog(@"selectIndex: %ld", selectedIndex);
+- (void)selectedNavigationItem:(NavigationTitleButton *)button withIndex:(NSNumber *)selectedIndex {
+    NSLog(@"selectIndex: %ld", [selectedIndex integerValue]);
 }
 
 

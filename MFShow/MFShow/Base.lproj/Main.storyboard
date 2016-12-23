@@ -106,7 +106,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa3-Wg-ARr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549.5999999999999" y="-766.86656671664173"/>
+            <point key="canvasLocation" x="1550" y="-773"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="5nW-v7-tqN">
+            <objects>
+                <viewController id="yJD-td-n5N" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nkk-vL-Rrf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ePt-bt-GRt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TA8-bR-fUD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKY-cp-Ww2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406" y="-773"/>
         </scene>
         <!--段子文-->
         <scene sceneID="D4s-Im-ptj">
