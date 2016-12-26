@@ -84,6 +84,7 @@ extern NSString *kRefreshDataOnRequestCompletedSuccess;
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 
-- (NSString*) httpUrlStringMd5;
+//-(NSString *)httpUrlStringMD5;
+- (NSString *)httpUrlStringMd5;
 
 @end

@@ -32,6 +32,7 @@
 
 
 #import "UIColor+ColorWithH.h"
+#import "NSObject+Data.h"
 
 
 #endif /* MFShow_pch */

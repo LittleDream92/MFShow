@@ -20,6 +20,8 @@
 		A839397A1E0A77E700881319 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83939791E0A77E700881319 /* HomeViewController.m */; };
 		A839397D1E0A77F500881319 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A839397C1E0A77F500881319 /* ItemViewController.m */; };
 		A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A839397F1E0A780B00881319 /* PersonalTableViewController.m */; };
+		A86D03861E10B79100C25712 /* NSObject+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = A86D03851E10B79100C25712 /* NSObject+Data.m */; };
+		A86D038A1E10BDB800C25712 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A86D03891E10BDB800C25712 /* EGORefreshTableHeaderView.m */; };
 		A8D632641E0BB7DB00123AA4 /* LikeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */; };
 		A8D632671E0BC87400123AA4 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632661E0BC87400123AA4 /* DownloadTableViewController.m */; };
 		A8D6326A1E0BD18200123AA4 /* FeedBackByCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632691E0BD18200123AA4 /* FeedBackByCustomViewController.m */; };
@@ -57,6 +59,10 @@
 		A839397C1E0A77F500881319 /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		A839397E1E0A780B00881319 /* PersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableViewController.h; sourceTree = "<group>"; };
 		A839397F1E0A780B00881319 /* PersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewController.m; sourceTree = "<group>"; };
+		A86D03841E10B79100C25712 /* NSObject+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Data.h"; sourceTree = "<group>"; };
+		A86D03851E10B79100C25712 /* NSObject+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Data.m"; sourceTree = "<group>"; };
+		A86D03881E10BDB800C25712 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		A86D03891E10BDB800C25712 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		A8D632621E0BB7DB00123AA4 /* LikeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeFeedViewController.h; sourceTree = "<group>"; };
 		A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeFeedViewController.m; sourceTree = "<group>"; };
 		A8D632651E0BC87400123AA4 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
@@ -103,6 +109,8 @@
 			children = (
 				A83389EC1E0CFEB900AEEBC1 /* UIColor+ColorWithH.h */,
 				A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */,
+				A86D03841E10B79100C25712 /* NSObject+Data.h */,
+				A86D03851E10B79100C25712 /* NSObject+Data.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -209,6 +217,7 @@
 		A83939631E0A764500881319 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A86D03871E10BDB800C25712 /* EGORefreshTableHeaderView */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -364,6 +373,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A86D03871E10BDB800C25712 /* EGORefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				A86D03881E10BDB800C25712 /* EGORefreshTableHeaderView.h */,
+				A86D03891E10BDB800C25712 /* EGORefreshTableHeaderView.m */,
+			);
+			path = EGORefreshTableHeaderView;
+			sourceTree = "<group>";
+		};
 		D6958F19C1F460583C8406E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +520,8 @@
 				A839397D1E0A77F500881319 /* ItemViewController.m in Sources */,
 				A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */,
 				A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */,
+				A86D038A1E10BDB800C25712 /* EGORefreshTableHeaderView.m in Sources */,
+				A86D03861E10B79100C25712 /* NSObject+Data.m in Sources */,
 				A83939481E0A736100881319 /* main.m in Sources */,
 				A839397A1E0A77E700881319 /* HomeViewController.m in Sources */,
 				A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */,
