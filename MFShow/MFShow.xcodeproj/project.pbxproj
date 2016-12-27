@@ -10,7 +10,7 @@
 		A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389E91E0CFB2300AEEBC1 /* NavigationTitleButton.m */; };
 		A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */; };
 		A83389F41E0D1BE300AEEBC1 /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */; };
-		A83389F81E0D221800AEEBC1 /* RefreshNetServerData.m in Sources */ = {isa = PBXBuildFile; fileRef = A83389F71E0D221800AEEBC1 /* RefreshNetServerData.m */; };
+		A83442711E120CAE00F63B4A /* BannersView.m in Sources */ = {isa = PBXBuildFile; fileRef = A83442701E120CAE00F63B4A /* BannersView.m */; };
 		A83939481E0A736100881319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83939471E0A736100881319 /* main.m */; };
 		A839394B1E0A736100881319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A839394A1E0A736100881319 /* AppDelegate.m */; };
 		A83939511E0A736100881319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A839394F1E0A736100881319 /* Main.storyboard */; };
@@ -21,7 +21,7 @@
 		A839397D1E0A77F500881319 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A839397C1E0A77F500881319 /* ItemViewController.m */; };
 		A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A839397F1E0A780B00881319 /* PersonalTableViewController.m */; };
 		A86D03861E10B79100C25712 /* NSObject+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = A86D03851E10B79100C25712 /* NSObject+Data.m */; };
-		A86D038A1E10BDB800C25712 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A86D03891E10BDB800C25712 /* EGORefreshTableHeaderView.m */; };
+		A86D04141E11085700C25712 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = A86D04131E11085700C25712 /* UIViewExt.m */; };
 		A8D632641E0BB7DB00123AA4 /* LikeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */; };
 		A8D632671E0BC87400123AA4 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632661E0BC87400123AA4 /* DownloadTableViewController.m */; };
 		A8D6326A1E0BD18200123AA4 /* FeedBackByCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D632691E0BD18200123AA4 /* FeedBackByCustomViewController.m */; };
@@ -40,8 +40,8 @@
 		A83389ED1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorWithH.m"; sourceTree = "<group>"; };
 		A83389F21E0D1BE300AEEBC1 /* MainFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedViewController.h; sourceTree = "<group>"; };
 		A83389F31E0D1BE300AEEBC1 /* MainFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedViewController.m; sourceTree = "<group>"; };
-		A83389F61E0D221800AEEBC1 /* RefreshNetServerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshNetServerData.h; sourceTree = "<group>"; };
-		A83389F71E0D221800AEEBC1 /* RefreshNetServerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshNetServerData.m; sourceTree = "<group>"; };
+		A834426F1E120CAE00F63B4A /* BannersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannersView.h; sourceTree = "<group>"; };
+		A83442701E120CAE00F63B4A /* BannersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannersView.m; sourceTree = "<group>"; };
 		A83939431E0A736100881319 /* MFShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83939471E0A736100881319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A83939491E0A736100881319 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,8 +61,8 @@
 		A839397F1E0A780B00881319 /* PersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewController.m; sourceTree = "<group>"; };
 		A86D03841E10B79100C25712 /* NSObject+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Data.h"; sourceTree = "<group>"; };
 		A86D03851E10B79100C25712 /* NSObject+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Data.m"; sourceTree = "<group>"; };
-		A86D03881E10BDB800C25712 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		A86D03891E10BDB800C25712 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		A86D04121E11085700C25712 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		A86D04131E11085700C25712 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		A8D632621E0BB7DB00123AA4 /* LikeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeFeedViewController.h; sourceTree = "<group>"; };
 		A8D632631E0BB7DB00123AA4 /* LikeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeFeedViewController.m; sourceTree = "<group>"; };
 		A8D632651E0BC87400123AA4 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
@@ -113,15 +113,6 @@
 				A86D03851E10B79100C25712 /* NSObject+Data.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		A83389F51E0D21FD00AEEBC1 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				A83389F61E0D221800AEEBC1 /* RefreshNetServerData.h */,
-				A83389F71E0D221800AEEBC1 /* RefreshNetServerData.m */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		A839393A1E0A736100881319 = {
@@ -179,7 +170,6 @@
 		A839395F1E0A764500881319 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				A83389F51E0D21FD00AEEBC1 /* Utils */,
 				A83389EB1E0CFE9300AEEBC1 /* Category */,
 				A83389E71E0CFB0400AEEBC1 /* Public */,
 				A83939601E0A764500881319 /* Root */,
@@ -217,7 +207,8 @@
 		A83939631E0A764500881319 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A86D03871E10BDB800C25712 /* EGORefreshTableHeaderView */,
+				A86D04121E11085700C25712 /* UIViewExt.h */,
+				A86D04131E11085700C25712 /* UIViewExt.m */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -293,6 +284,8 @@
 		A839396C1E0A77C100881319 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A834426F1E120CAE00F63B4A /* BannersView.h */,
+				A83442701E120CAE00F63B4A /* BannersView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,15 +364,6 @@
 				A8D6326F1E0BD60900123AA4 /* ManageFavorItemView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A86D03871E10BDB800C25712 /* EGORefreshTableHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				A86D03881E10BDB800C25712 /* EGORefreshTableHeaderView.h */,
-				A86D03891E10BDB800C25712 /* EGORefreshTableHeaderView.m */,
-			);
-			path = EGORefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
 		D6958F19C1F460583C8406E6 /* Pods */ = {
@@ -515,14 +499,14 @@
 			files = (
 				A83939771E0A77D500881319 /* RootTabbarController.m in Sources */,
 				A8D632701E0BD60900123AA4 /* ManageFavorItemView.m in Sources */,
-				A83389F81E0D221800AEEBC1 /* RefreshNetServerData.m in Sources */,
 				A839394B1E0A736100881319 /* AppDelegate.m in Sources */,
 				A839397D1E0A77F500881319 /* ItemViewController.m in Sources */,
 				A83389EE1E0CFEB900AEEBC1 /* UIColor+ColorWithH.m in Sources */,
 				A83389EA1E0CFB2300AEEBC1 /* NavigationTitleButton.m in Sources */,
-				A86D038A1E10BDB800C25712 /* EGORefreshTableHeaderView.m in Sources */,
 				A86D03861E10B79100C25712 /* NSObject+Data.m in Sources */,
 				A83939481E0A736100881319 /* main.m in Sources */,
+				A83442711E120CAE00F63B4A /* BannersView.m in Sources */,
+				A86D04141E11085700C25712 /* UIViewExt.m in Sources */,
 				A839397A1E0A77E700881319 /* HomeViewController.m in Sources */,
 				A83939801E0A780B00881319 /* PersonalTableViewController.m in Sources */,
 				A8D6326D1E0BD4D500123AA4 /* ManageLikeFeedViewController.m in Sources */,
@@ -650,6 +634,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFShow/MFShow.pch";
 				INFOPLIST_FILE = MFShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dk.MFShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,6 +648,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFShow/MFShow.pch";
 				INFOPLIST_FILE = MFShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dk.MFShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";

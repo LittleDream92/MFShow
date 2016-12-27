@@ -25,14 +25,44 @@
 #define kDefaultBackgroundColor [UIColor colorWithRed:243.0/255.0 green:243.0/255.0 blue:243.0/255.0 alpha:1]
 
 
+//60 S
+#define NetServerTimeoutInterval 60.0
 
 
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 
+//base url
+//
+#define SERVER_URL @"http://ikantoutiao.com"
+//#define SERVER_URL @"http://zhaojiecao.sinaapp.com"
+//#define SERVER_URL @"http://1.jiecaotest.sinaapp.com"
+//#define SERVER_URL @"http://1.zhaojiecao.sinaapp.com"
+
+
+/**
+ *   渠道号
+ //    苹果  free
+ //    PP助手   P991
+ //    同步推   P992
+ //    91      P306
+ //    pro版      zjc
+ */
+#define download_source @"free"
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AFNetworking.h"
 
 #import "UIColor+ColorWithH.h"
 #import "NSObject+Data.h"
+
+//#import "ProtocolConstant.h"
+
+//#define  DOCUMENT_DIRECTORY [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+#define  DOCUMENT_DIRECTORY [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"DataBuffer"]
 
 
 #endif /* MFShow_pch */
