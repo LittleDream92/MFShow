@@ -127,14 +127,30 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-YL-EeU">
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-YL-EeU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="177" id="H8C-kv-MRk"/>
+                                            </constraints>
                                         </scrollView>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="BMi-19-fU4">
+                                            <rect key="frame" x="0.0" y="140" width="375" height="37"/>
+                                            <color key="pageIndicatorTintColor" red="0.4431372549" green="0.41960784309999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="currentPageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </pageControl>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="LGB-YL-EeU" secondAttribute="trailing" id="6Sg-ax-9j1"/>
+                                        <constraint firstItem="LGB-YL-EeU" firstAttribute="leading" secondItem="b0M-B1-HPf" secondAttribute="leading" id="ARc-OW-P7i"/>
+                                        <constraint firstAttribute="bottom" secondItem="BMi-19-fU4" secondAttribute="bottom" id="EKB-he-YU1"/>
+                                        <constraint firstItem="LGB-YL-EeU" firstAttribute="top" secondItem="b0M-B1-HPf" secondAttribute="top" id="II1-45-tnx"/>
+                                        <constraint firstAttribute="trailing" secondItem="BMi-19-fU4" secondAttribute="trailing" id="phP-hx-gGc"/>
+                                        <constraint firstItem="BMi-19-fU4" firstAttribute="leading" secondItem="b0M-B1-HPf" secondAttribute="leading" id="zI3-ib-FSD"/>
+                                    </constraints>
                                     <connections>
+                                        <outlet property="pageContrl" destination="BMi-19-fU4" id="JFQ-EU-qvC"/>
                                         <outlet property="scrollview" destination="LGB-YL-EeU" id="Lvs-Hc-72d"/>
                                     </connections>
                                 </view>
@@ -152,6 +168,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannersView" destination="b0M-B1-HPf" id="pd2-jc-llu"/>
                         <outlet property="tableView" destination="W63-GZ-y26" id="2gS-jR-tQj"/>
                     </connections>
                 </viewController>

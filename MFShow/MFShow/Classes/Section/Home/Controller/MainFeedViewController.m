@@ -7,10 +7,12 @@
 //
 
 #import "MainFeedViewController.h"
+#import "BannersView.h"
 
 @interface MainFeedViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet BannersView *bannersView;
 
 
 @end
